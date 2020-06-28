@@ -89,7 +89,7 @@ if __name__ == "__main__":
                 pass
 
         elif 'play music' in text:
-            music_dir = 'D:./'  #Your Path
+            music_dir = './'  #Your Path
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[0]))

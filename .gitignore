@@ -1,1 +1,5 @@
+# Project specific
+.vscode/*
+
+# Balthazar useless file
 voice.mp3
