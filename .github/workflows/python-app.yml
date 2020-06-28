@@ -49,4 +49,8 @@ jobs:
       - name: "Install in dev mode"
         run: "python -m pip install --upgrade pip"
       - name: "Import package"
-        run: "python -c 'import structlog; print(structlog.__version__)'"
+        run: |
+          pip install SpeechRecognition
+          pip install wikipedia
+          pip install gTTS
+          pip install playsound
