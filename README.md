@@ -1,5 +1,4 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![badge](https://action-badges.now.sh/Ydos2/AI_Balthazar_Voice_Assistant)
 ![badge](https://action-badges.now.sh/Ydos2/AI_Balthazar_Voice_Assistant?action=test)
 
 # AI_Balthazar_Voice_Assistant
