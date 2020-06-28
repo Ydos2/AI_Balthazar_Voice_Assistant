@@ -49,4 +49,5 @@ jobs:
           pip install wikipedia
           pip install gTTS
           pip install playsound
-          pip install pyaudio
+          pip install pipwin
+          pipwin install pyaudio
