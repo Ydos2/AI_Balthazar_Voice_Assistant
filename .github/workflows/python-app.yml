@@ -28,7 +28,7 @@ jobs:
         pip install wikipedia
         pip install gTTS
         pip install playsound
-        pip install pyaudio
+        sudo apt-get install portaudio19-dev python-pyaudio python3-pyaudio
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
