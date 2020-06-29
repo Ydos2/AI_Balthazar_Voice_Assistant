@@ -4,12 +4,12 @@ import re
 import platform
 import os
 
-def website_text(Balthazar, text):
+def website_text(Balthazar, text, languages):
     if "Wikipedia" in text:
-        Balthazar.speak('Searching Wikipedia...')
+        Balthazar.speak('Searching Wikipedia...', languages)
         text = text.replace("wikipedia", "")
         results = wikipedia.summary(text, sentences=2)
-        Balthazar.speak("According to Wikipedia")
+        Balthazar.speak("According to Wikipedia", languages)
         print(results)
         Balthazar.speak(results)
 
@@ -41,7 +41,7 @@ def website_text(Balthazar, text):
             pass
 
     elif 'close chrome' in text:
-        Balthazar.speak("Chrome is close.")
+        Balthazar.speak("Chrome is close.", languages)
         system_txt = platform.system()
         if (system_txt == 'Linux'):
             browserExe = "chrome"
@@ -51,7 +51,7 @@ def website_text(Balthazar, text):
             os.system("taskkill /f /im " + browserExe)
 
     elif 'close Firefox' in text:
-        Balthazar.speak("Firefox is close.")
+        Balthazar.speak("Firefox is close.", languages)
         system_txt = platform.system()
         if (system_txt == 'Linux'):
             browserExe = "firefox"

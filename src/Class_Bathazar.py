@@ -4,8 +4,12 @@ import speech_recognition as sr
 from gtts import gTTS
 
 class Balthazar_Class:
-    def speak(self, text):
-        tts = gTTS(text=text, lang="en")
+
+    def speak(self, text, lang):
+        if (lang == 1):
+            tts = gTTS(text=text, lang="fr")
+        else:
+            tts = gTTS(text=text, lang="en")
         filename = "voice.mp3"
         tts.save(filename)
         playsound.playsound(filename)
