@@ -48,7 +48,7 @@ def EnglishFunction(Balthazar, text, languages):
             Balthazar.speak("I change the language in English", languages)
 
     elif "what is your name" in text:
-        Balthazar.speak("My name is Greg", languages)
+        Balthazar.speak("My name is Balthazar", languages)
 
     elif 'play music' in text:
         music_dir = './'  #Your Path
