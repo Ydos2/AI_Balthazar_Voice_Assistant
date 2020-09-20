@@ -2,7 +2,7 @@
 ![badge](https://action-badges.now.sh/Ydos2/AI_Balthazar_Voice_Assistant?action=test)
 
 # AI_Balthazar_Voice_Assistant
-Balthazar is a voice recognition AI which for the moment takes into account the voice and the voice request to send him a reply, this AI is currently in version 2.0
+Balthazar is a voice recognition AI which for the moment takes into account the voice and the voice request to send him a reply, this AI is currently in version 2.1
 
 To launch the install program it's package!
 

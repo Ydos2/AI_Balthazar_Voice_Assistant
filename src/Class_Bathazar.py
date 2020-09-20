@@ -15,14 +15,17 @@ class Balthazar_Class:
         playsound.playsound(filename)
         os.remove(filename)
 
-    def get_audio(self):
+    def get_audio(self, lang):
         r = sr.Recognizer()
         with sr.Microphone(device_index=0) as source:
             audio = r.listen(source)
             said = ""
 
             try:
-                said = r.recognize_google(audio)
+                if (lang == 0):
+                    said = r.recognize_google(audio, language="en-US")
+                elif (lang == 1):
+                    said = r.recognize_google(audio, language="fr-FR")
                 print(said)
             except Exception as e:
                 print("Exception: " + str(e))

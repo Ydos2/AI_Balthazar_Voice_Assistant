@@ -1,3 +1,4 @@
+sudo apt-get update
 python -m pip install --upgrade pip
 pip install flake8 pytest
 pip install SpeechRecognition

@@ -1,3 +1,4 @@
+sudo dnf update
 sudo dnf install python3-devel
 sudo pip install SpeechRecognition
 sudo pip install wikipedia

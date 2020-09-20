@@ -4,7 +4,7 @@ import re
 import platform
 import os
 
-def website_text(Balthazar, text, languages):
+def websiteText(Balthazar, text, languages):
     if "Wikipedia" in text:
         Balthazar.speak('Searching Wikipedia...', languages)
         text = text.replace("wikipedia", "")
