@@ -25,3 +25,12 @@ pip install gTTS
 pip install playsound
 pip install pyaudio
 ```
+
+### Config:
+
+```
+English:
+    languages = 0
+Frensh:
+    languages = 1
+```

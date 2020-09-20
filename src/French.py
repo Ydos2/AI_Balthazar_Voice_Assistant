@@ -3,7 +3,9 @@ import platform
 import os
 import time
 import datetime
+import json
 from .website import websiteText
+from .UpdateJson import UpdateJsonLanguage
 
 def FrenchFunction(Balthazar, text, languages):
     websiteText(Balthazar, text, languages)
@@ -21,9 +23,11 @@ def FrenchFunction(Balthazar, text, languages):
     elif "langue" in text:
         if "français" in text:
             languages = 1
+            UpdateJsonLanguage(languages)
             Balthazar.speak("J'ai changer la langue en Français", languages)
         else:
             languages = 0
+            UpdateJsonLanguage(languages)
             Balthazar.speak("I change the language in English", languages)
 
     elif "quel est ton nom" in text:
